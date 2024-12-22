@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+   <html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../assets/css/styles.css">
+
+      <title>Responsive portfolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">Crafty-Web</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">Accueil</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">À propos de nous</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="work.html" class="nav__link">Portfolio</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="contact.html" class="button">Contactez-Nous</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Theme buttom -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+               
+               <!--Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-apps-2-line"></i>
+               </div>
+            </div>
+            <!-- Language Switcher -->
+            <div class="nav__lang">
+               <select id="languageSwitcher" class="language-switcher">
+                  <option value="fr">Français</option>
+                  <option value="en">English</option>
+               </select>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section">
+            <div class="home__rectangle"></div>
+
+            <div class="home__container container grid">
+               <div class="home__perfil perfil">
+                  <div class="perfil__content">
+                     <img src="../assets/img/logo1.JPG" alt="image" class="perfil__img">
+                  </div>
+               </div>
+
+               <div class="home__content grid">
+                  <div class="home__data grid">
+                     <h1 class="home__name">Crafty-Web</h1>
+
+                     <h2 class="home__profession">Designer Web </h2>
+
+                     <!-- <div class="home__social">
+                        <a href="https://github.com/" target="_blank" class="home__social-link">
+                           <i class="ri-github-fill"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                           <i class="ri-linkedin-box-fill"></i>
+                        </a>
+
+                        <a href="https://dribbble.com/" target="_blank" class="home__social-link">
+                           <i class="ri-dribbble-line"></i>
+                        </a>                        
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <h2 class="section__title">
+               Les Services <br>
+               Que Nous Offrons
+            </h2>
+
+            <div class="sevices__container container grid">
+               <article class="services__card">
+                  <i class="ri-code-s-slash-line services__icon"></i>
+                  <h2 class="services__title">Développeur Web</h2>
+                  <p class="services__description">
+                     Sites web de haute qualité avec HTML.
+                  </p>
+
+                  <button class="services__button button">En savoir plus</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Développeur Web</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Conception de sites web réactifs et interactifs adaptés aux besoins des clients.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Inclut le développement frontend et backend.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Intégration de systèmes de gestion de contenu (CMS).
+                           </li>
+
+                           <li class="services__modal-item">
+                              Fonctionnalités de E-commerce.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-pen-nib-line services__icon"></i>
+                  <h2 class="services__title">Designer Web</h2>
+                  <p class="services__description">
+                     Designs avec CSS qui sont 
+                     efficaces et agréables à utiliser.
+                  </p>
+
+                  <button class="services__button button">En savoir plus</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Designer Web</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Création de sites web professionnels de qualité selon les demandes du client.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Conception de prototypes.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Positionnement avancé SEO.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Résolution de problèmes de performance des pages web.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-layout-2-line services__icon"></i>
+                  <h2 class="services__title">Interfaces UI/UX</h2>
+                  <p class="services__description">
+                      Designs élégants et intuitifs, 
+                      pour l'utilisateur
+                  </p>
+
+                  <button class="services__button button">En savoir plus</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Interfaces UI/UX</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Interfaces utilisateur visuellement attrayantes et intuitives
+                           </li>
+
+                           <li class="services__modal-item">
+                              Amélioration de l’utilisabilité et de l’engagement.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Wireframing et prototypage.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Tests pour assurer une interaction sans faille.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== WORK ====================-->
+         <section class="work section">
+            <h2 class="section__title">
+               Nos <br>
+               Derniers Projets
+            </h2>
+
+            <div class="work__container container grid">
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="../assets/img/work-1.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">À venir</h2>
+                  <span class="work__subtitle">Conception de site web</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="../assets/img/work-2.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">À venir</h2>
+                  <span class="work__subtitle">Conception de site web</span>
+               </article>
+               
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="../assets/img/work-3.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">À venir</h2>
+                  <span class="work__subtitle">Conception de site web</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="../assets/img/work-4.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">À venir</h2>
+                  <span class="work__subtitle">Conception de site web</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="../assets/img/work-5.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">À venir</h2>
+                  <span class="work__subtitle">Conception de site web</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="../assets/img/work-6.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">À venir</h2>
+                  <span class="work__subtitle">Conception de site web</span>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+<!--          <section class="testimonial section">
+            <h2 class="section__title">
+               What They Say <br>
+               About Us?
+            </h2>
+
+           <div class="testimonial__container container">
+               <div class="testimonial__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="assets/img/testimonial-1.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">nom</h2>
+                        <p class="testimonial__description">
+                           commentaire
+                        </p>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="assets/img/testimonial-2.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">nom</h2>
+                        <p class="testimonial__description">
+                           commentaire
+                        </p>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="assets/img/testimonial-3.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">nom</h2>
+                        <p class="testimonial__description">
+                           commentaire
+                        </p>
+                     </article>
+                     
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="assets/img/testimonial-4.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">nom</h2>
+                        <p class="testimonial__description">
+                           comment.
+                        </p>
+                     </article>
+                  </div>
+               </div>-->
+
+               <!-- Pagination -->
+               <div class="swiper-paginaton"></div>
+            </div>
+         </section> 
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section">
+            <div class="contact__container container grid">
+               <h2 class="section__title">
+                  Parlons <br>
+                  De Votre Projet
+               </h2>
+
+               <a href="contact.html" class="contact__button button">Contactez-nous</a>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <a href="index.html" class="footer__logo" id="footer-logo">Crafty-Web</a>
+   
+               <ul class="footer__links">
+                  <li>
+                     <a href="about.html" class="footer__link" id="footer-about">À propos de nous</a>
+                  </li>
+   
+                  <li>
+                     <a href="work.html" class="footer__link" id="footer-portfolio">Portfolio</a>
+                  </li>
+   
+                  <li>
+                     <a href="contact.html" class="footer__link" id="footer-contact">Contact Us</a>
+                  </li>
+               </ul>
+   
+               <div class="footer__social">
+                  <!-- <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                      <i class="ri-facebook-circle-fill"></i>
+                   </a>-->
+    
+                   <a href="https://www.instagram.com/crafty.webz/" target="_blank" class="footer__social-link">
+                      <i class="ri-instagram-fill"></i>
+                   </a>
+    
+                   <!--<a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                      <i class="ri-twitter-x-line"></i>
+                   </a>-->
+    
+                   <a href="https://www.linkedin.com/in/crafty-web-188497334/" target="_blank" class="footer__social-link">
+                      <i class="ri-linkedin-box-fill"></i>
+                   </a>
+    
+                   <span class="footer__social-comment" id="footer-coming-soon"></span>
+    
+                </div>
+            </div>
+   
+            <span class="footer__copy">
+               &#169; Tout droits réservés par Crafty-Web
+            </span>
+         </div>
+         
+      </footer> 
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="schrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="../assets/js/main.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="../assets/js/swiper-bundle.min.js"></script>
+      <script src="../assets/js/LangSwitcher.js"></script>
+
+
+      <!--=============== INDEX JS ===============-->
+      <script src="../assets/js/index.js"></script>
+   </body>
+</html>
